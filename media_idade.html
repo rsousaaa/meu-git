@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h>Tabuada com for</h>
+<br>
+<br>
+
+<script>
+
+	function pulaLinha() {
+
+			document.write("<br><br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var qtdFamilia = parseInt(prompt("Quantas pessoas tem na sua familia: "));
+	var contador=1; 
+	var somaIdade=0;
+	
+	while(contador <= qtdFamilia)
+	{
+		var pegaIdadeTotal = parseInt((prompt("Digite idade: ")));
+		somaIdade = somaIdade + pegaIdadeTotal;
+		contador = contador + 1;
+	}
+
+mostra("A media de idade da sua famialia é: " + somaIdade/qtdFamilia);
+
+
+</script>

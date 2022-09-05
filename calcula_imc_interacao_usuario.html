@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<h>Calcula IMC</h>
+<br>
+<br>
+
+<script>
+
+	function pulaLinha() {
+
+			document.write("<br><br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaImc (peso, altura) {
+
+		var imc= peso / (altura * altura);
+		return imc;
+
+	}
+
+
+
+	var nome =prompt("Qual seu nome?");
+	var informeAltura= prompt(nome + ", Qual a sua altura: ");
+	var informePeso= prompt(nome + ", Qual o seu peso");
+
+	var retornaCalc= calculaImc(informePeso, informeAltura);
+
+	mostra(nome + ", O calculo do seu IMC é: " + retornaCalc);
+
+	if(retornaCalc < 18.5){
+		mostra("O seu IMC está abaixo!")
+	}
+
+	if(retornaCalc > 35){
+		mostra("O seu IMC está acima!")
+	}
+
+	if(retornaCalc >=18.5 && retornaCalc <=35){
+		mostra("O seu IMC está na media!")
+	
+	}
+
+	
+
+</script>

@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h>Teste futebol</h>
+
+<br>
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+		
+	}
+
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var vitorias =parseInt(prompt("Qual o numero de vitorias: "));
+	var empates = parseInt(prompt("Qual o numero de empates: "));
+
+	var total= vitorias * 3 + empates;
+
+	mostra("O seu total é de: " + total)
+
+	if (total > 28) {
+		mostra("Seu time está melhor que ano passado!")
+	}
+
+	if (total < 28) {
+		mostra("Seu time está pior que ano passado!")
+	}
+
+	if (total == 28) {
+		mostra("Seu time está igual ao ano passado!")
+	}
+
+
+
+
+</script>

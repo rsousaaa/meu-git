@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h>Copa do mundo</h>
+<br>
+<br>
+
+<script>
+
+	function pulaLinha() {
+
+			document.write("<br><br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+ 	var anoCopa=1930;
+ 	var limite= parseInt(prompt("Qual é o ano limite?"))
+
+ 	while(anoCopa <=limite) {
+
+ 		mostra(anoCopa + " Teve copa!")
+ 		anoCopa = anoCopa + 4
+ 	}
+
+	
+
+	mostra("Ufa! Esses foram os anos de cop até " + limite);
+
+</script>

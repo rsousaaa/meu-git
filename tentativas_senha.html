@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+			document.write("<br><br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var loginCadastrado="alura";
+	var senhaCadastrada="alura123";
+
+	var tentativa= 1
+
+	while(tentativa <= 3)
+	{
+
+		var loginInformado=prompt("Qual é o seu usuario?");
+		var senhaInformada=prompt("Qual é a sua senha:");
+
+		if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) 
+		{
+		alert("Bem-vindo ao sistema " + loginInformado);
+		break;
+		} 
+
+		else {
+
+		alert("Senha invalida. Tente novamente.");
+		tentativa = tentativa +1;
+		}
+	
+	}
+
+</script>

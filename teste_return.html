@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h>Teste return</h>
+
+<br>
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+		
+	}
+
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaDollar(reais, valorDollar) {
+
+		var conversao= reais / valorDollar;
+		return conversao
+		//document.write("O valor convertido é " + conversao + " Reais");
+	}
+
+var informaReais= prompt("Informa a quantidade em reais: ")
+var informaDollar= prompt("Informe o preço atual do Dollar: ")
+
+var convertido =calculaDollar(informaReais,informaDollar);
+
+mostra("O valor convertido é " + convertido + " Reais");
+
+
+
+
+</script>

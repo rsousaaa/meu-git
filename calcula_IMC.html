@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h>Calcula IMC</h>
+<br>
+<br>
+
+<script>
+
+	function pulaLinha() {
+
+			document.write("<br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaImc (peso, altura) {
+
+		var imc= peso / (altura * altura);
+		return imc;
+
+	}
+
+
+
+	var imcRodrigo= calculaImc(82,1.71);
+	var imcLeo= calculaImc(89,1.75);
+
+mostra("O calula do IMC é " + imcRodrigo);
+mostra("O calula do IMC é " + imcLeo);
+
+</script>

@@ -1,0 +1,28 @@
+<meta charset="UTF=8">
+
+<h1>Teste problema de gerações</h1>
+
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>")
+	}
+	
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+
+	var anoInicial=1500;
+	var anoAtual=2022;
+	var mediaGeracao=28;
+
+mostra("Se passaram " + Math.round((anoAtual - anoInicial)/mediaGeracao) + " Gerações");
+
+
+
+</script>

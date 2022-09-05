@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h>Tabuada com for</h>
+<br>
+<br>
+
+<script>
+
+	function pulaLinha() {
+
+			document.write("<br><br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+
+	var numeroEscolhido=parseInt(prompt("Qual o numero que deseja fazer a tabuada? "));
+
+	for(var multiplicador= 1;multiplicador <= 10;multiplicador=multiplicador + 1)
+
+	{
+		mostra(numeroEscolhido + " x " + multiplicador + " = " + (numeroEscolhido * multiplicador))
+		
+	}
+
+
+
+</script>

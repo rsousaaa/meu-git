@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<h>Tabuada</h>
+<br>
+<br>
+
+<script>
+
+	function pulaLinha() {
+
+			document.write("<br><br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+
+	var numeroEscolhido=parseInt(prompt("Qual o numero que deseja fazer a tabuada? "));
+	var multiplicador=1;
+
+	if(numeroEscolhido <= 10)
+	{
+
+		while(multiplicador <=10)
+		{
+			mostra(numeroEscolhido + " x " + multiplicador + " = " + (numeroEscolhido * multiplicador));
+			multiplicador= multiplicador + 1
+		}
+
+	
+ 	} else {
+
+ 		mostra("Esse sistema calcula apenas até o numero 10 e o escolhido foi: " + numeroEscolhido);
+ 	}
+
+</script>
